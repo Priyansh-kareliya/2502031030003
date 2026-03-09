@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #141E30;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #2193b0;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+header {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(145deg, #2193b0, #6dd5ed);
+    color: white;
+    animation: fadeIn 1.5s ease;
+}
+
+header h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 60px 20px;
+    animation: fadeIn 2s ease;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: zoomIn 1.5s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay h3 {
+    font-size: 1.8em;
+    color: #fff;
+    margin: 0;
+}
+
+.portfolio-overlay a {
+    margin-top: 10px;
+    text-decoration: none;
+    background: #ff7eb3;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.portfolio-overlay a:hover {
+    background: #ff758c;
+}
+
+.cta {
+    text-align: center;
+    margin: 50px 0;
+    animation: fadeIn 2.5s ease;
+}
+
+.cta a {
+    text-decoration: none;
+    background: linear-gradient(145deg, #2193b0, #6dd5ed);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta a:hover {
+    background: linear-gradient(145deg, #6dd5ed, #2193b0);
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #101921;
+    color: #868686;
+    animation: fadeIn 3s ease;
+}
+
+footer a {
+    color: #6dd5ed;
+    text-decoration: none;
+}

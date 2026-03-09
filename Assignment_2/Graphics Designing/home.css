@@ -1,0 +1,268 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav a {
+    color: #4a5568;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #2d3748;
+}
+
+header .fas {
+    color: #4a5568;
+    transition: color 0.3s;
+}
+
+header .fas:hover {
+    color: #2d3748;
+}
+
+.hero-section {
+    position: relative;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-section .content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-section .content p {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.hero-section .content a {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #f6ad55;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s;
+}
+
+.hero-section .content a:hover {
+    background-color: #dd6b20;
+}
+
+.about-section,
+.services-section,
+.portfolio-section,
+.contact-section {
+    padding: 4rem 0;
+}
+
+.about-section .content,
+.contact-section .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-section .content img,
+.contact-section .content img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .content h2,
+.services-section h2,
+.portfolio-section h2,
+.contact-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d3748;
+    text-align: center;
+}
+
+.about-section .content p,
+.services-section p,
+.portfolio-section p,
+.contact-section p {
+    margin-top: 1rem;
+    color: #718096;
+    text-align: center;
+}
+
+.about-section .content a,
+.contact-section .content a {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #f6ad55;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s;
+}
+
+.about-section .content a:hover,
+.contact-section .content a:hover {
+    background-color: #dd6b20;
+}
+
+.services-section .service-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.services-section .service-card:hover {
+    transform: scale(1.05);
+}
+
+.services-section .service-card img {
+    margin-bottom: 1rem;
+}
+
+.services-section .service-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.services-section .service-card p {
+    margin-top: 0.5rem;
+    color: #718096;
+}
+
+.portfolio-section .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-section .portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-section .portfolio-item .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.portfolio-section .portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+.contact-section form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section form .form-group {
+    margin-bottom: 1rem;
+}
+
+.contact-section form .form-group label {
+    display: block;
+    color: #4a5568;
+}
+
+.contact-section form .form-group input,
+.contact-section form .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    transition: border-color 0.3s;
+}
+
+.contact-section form .form-group input:focus,
+.contact-section form .form-group textarea:focus {
+    border-color: #f6ad55;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(246, 173, 85, 0.5);
+}
+
+.contact-section form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #f6ad55;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s;
+}
+
+.contact-section form button:hover {
+    background-color: #dd6b20;
+}
+
+footer {
+    background-color: #2d3748;
+    color: #ffffff;
+    padding: 2rem 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .container img {
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+footer .container p {
+    margin-bottom: 1rem;
+}
+
+footer .container a {
+    color: #a0aec0;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+footer .container a:hover {
+    color: #ffffff;
+}
+
+```

@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #141E30;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #2193b0;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+header {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(145deg, #2193b0, #6dd5ed);
+    color: white;
+    animation: fadeIn 1.5s ease;
+}
+
+header h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1f2f47;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-section label {
+    font-size: 1.1em;
+}
+
+.contact-section input,
+.contact-section textarea,
+.contact-section button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    background: #2a3b5e;
+    color: #fff;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+    outline: none;
+    background: #324a6f;
+}
+
+.contact-section textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-section button {
+    background: linear-gradient(145deg, #2193b0, #6dd5ed);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-section button:hover {
+    background: linear-gradient(145deg, #6dd5ed, #2193b0);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #101921;
+    color: #868686;
+    animation: fadeIn 3s ease;
+}
+
+footer a {
+    color: #6dd5ed;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    header p {
+        font-size: 1.2em;
+    }
+    .contact-section {
+        padding: 15px;
+    }
+}

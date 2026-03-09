@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #2193b0, #1f2f47);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #2193b0;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #f3f3f3;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    color: #fff;
+}
+
+.service-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #eaeaea;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cta {
+    text-align: center;
+    margin: 50px 0;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.cta a {
+    text-decoration: none;
+    background: #fff;
+    color: #ff7e5f;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta a:hover {
+    background: #ff7e5f;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    color: #f3f3f3;
+}
